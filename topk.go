@@ -2,7 +2,6 @@ package topk
 
 import (
 	"container/heap"
-	"fmt"
 	"sort"
 )
 
@@ -129,13 +128,3 @@ func Float64Comparator(a, b interface{}) bool { return a.(float64) < b.(float64)
 
 // StringComparator compares strings
 func StringComparator(a, b interface{}) bool { return a.(string) < b.(string) }
-
-// ExampleTopK shows an example usage of the topk structure
-func ExampleTopK() {
-	tk := New(3, IntComparator)
-	for _, x := range []int{1, 5, 2, -1, 8, 9, -10} {
-		Push(tk, x)
-	}
-	// top3 = []interface{}{9, 8, 5}
-	fmt.Println(Get(tk))
-}
