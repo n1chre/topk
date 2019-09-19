@@ -1,6 +1,7 @@
 # topk
 
-TopK is a Go implementation of the Top K elements. 
+TopK is a Go implementation of the Top K elements.
+https://godoc.org/github.com/n1chre/topk
 
 ## API
 
